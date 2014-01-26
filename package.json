@@ -1,0 +1,28 @@
+{
+  "name": "clipon",
+  "version": "0.0.1",
+  "description": "This is an online clipboard.",
+  "main": "app.js",
+  "dependencies": {
+    "socket.io": "~0.9.16"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@heroku.com:clipon.git"
+  },
+  "keywords": [
+    "clipboard",
+    "copy",
+    "paste"
+  ],
+  "author": "eloone",
+  "license": "BSD",
+  "gitHead": "321ee9682a5d4f7a29fded1e7381ff6e35cfcba5",
+  "engines": {
+    "node": "0.8.18"
+  }
+}
