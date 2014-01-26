@@ -1,0 +1,68 @@
+body{
+	font-family: 'Merriweather', serif;
+	font-size:18px;
+}
+
+div[contenteditable], textarea{
+	border: 2px dashed #ccc;
+	outline :none;
+	min-height:100px;
+	padding:15px;
+	margin:15px;
+	width:95%;
+	font-size:18px;
+	font-family: 'Merriweather', serif;
+	background: white;
+	position: relative;
+	z-index: 1;
+}
+
+.session{
+	text-align:right;
+	font-size:12px;
+	color:#999;
+	padding: 0 10px;
+}
+
+.mute{
+	display:none;
+}
+
+.empty{
+	color : #AAA;
+}
+
+#full_url, #count, #url{
+	color:black;
+}
+
+.footer{
+	position: absolute;
+	bottom:5px;
+	width:98%;
+	color : #AAA;
+	font-size: 12px;
+}
+
+.footer a{
+	float:right;
+	text-decoration: none;
+	font-weight: normal;
+	color: black;
+	text-decoration: underline;
+	margin-left: 3px;
+}
+
+h1{
+	font-size:12px;
+	text-align:right;
+	font-weight: normal;
+}
+
+.oye-oye{
+	position: absolute;
+	top:50%;
+	width: 100%;
+	text-align: center;
+}
+
