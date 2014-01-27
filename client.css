@@ -49,7 +49,7 @@ textarea{
 .footer{
 	position: absolute;
 	bottom:5px;
-	width:98%;
+	width:100%;
 	color : #AAA;
 	font-size: 12px;
 }
@@ -67,6 +67,7 @@ h1{
 	font-size:12px;
 	text-align:right;
 	font-weight: normal;
+	margin : 15px 15px 10px 15px
 }
 
 .oye-oye{
