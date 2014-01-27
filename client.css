@@ -1,6 +1,13 @@
+html{
+	margin:0;
+	padding:0;
+}
+
 body{
 	font-family: 'Merriweather', serif;
 	font-size:18px;
+	margin:0;
+	padding:0;
 }
 
 div[contenteditable], textarea{
@@ -9,12 +16,15 @@ div[contenteditable], textarea{
 	min-height:100px;
 	padding:15px;
 	margin:15px;
-	width:95%;
 	font-size:18px;
 	font-family: 'Merriweather', serif;
 	background: white;
 	position: relative;
 	z-index: 1;
+}
+
+textarea{
+	width:95%;
 }
 
 .session{

@@ -1,3 +1,9 @@
+// Clipon Copyright (c) 2014 Elodie Rafalimanana. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+// This code is made to work on Heroku app servers
+
 var server = require('./lib/server')
    , app = require('http').createServer(server)
    , io = require('socket.io').listen(app)

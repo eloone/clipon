@@ -23,7 +23,7 @@
         path = window.location.pathname;
     }
 
-    //contentEditable = false;
+    contentEditable = false;
 
     pathElt.innerHTML = path.replace(/^\//, '');
 
