@@ -12,11 +12,12 @@
     var urlElt =  document.getElementById('full_url');
     var userElt = document.getElementById('users');
     var placeholderElt = document.getElementById('placeholder');
+    var sessionElt = document.getElementById('session');
     var contentEditable = ('contentEditable' in document.documentElement);
     var full_url = window.location.href;
-    var placeholderRaw = 'Just paste your snippet here and go to '+full_url+' on your other device to retrieve it. \nYou can also customize your own url ;)';
     var placeholderHtml;
-
+    var placeholderRaw;
+    
     //generates a new url
     if(path != '/'+randomID && path == '/'){
         window.location.pathname = randomID;
@@ -30,6 +31,8 @@
     urlElt.innerHTML = full_url;
 
     placeholderHtml = placeholderElt.innerHTML;
+
+    placeholderRaw = formatInput(placeholderHtml);
 
 /* socket events */
 /*--------------------------------------------------------------------------------------------------------------*/
@@ -108,6 +111,8 @@
     socket.on('server_ready', function(data){
 
         setCount(data.count);
+
+        sessionElt.className = 'session';
 
         setContent(data.input);
         
@@ -289,10 +294,10 @@
             text = text.replace(/\n/ig, '<br/>');
 
         }else{
-            //replaces html line breaks and block-level html tags by text line breaks
-            text = text.replace(/(<br\s*\/?>)|(<(div|p|table|ul|tr)[^>]*>)/ig, '\n');
             //replaces table columns tags by spaces to keep the table readable
-            text = text.replace(/<(td|th)[^>]*>/ig, ' ');
+            text = text.replace(/(<\/(td|th)[^>]*>)|(\s+)/ig, ' ');
+            //replaces html line breaks and block-level html tags by text line breaks
+            text = text.replace(/(<br\s*\/?>\s*)|(<\/(div|p|table|ul|tr)[^>]*>)/ig, '\n');
             //removes all the remaining closing tags from the text
             text = stripTags(text);
         }
