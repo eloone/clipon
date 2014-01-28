@@ -1,4 +1,4 @@
-Clipboard (Cp) License
+Clipon License
 ------------------------------------------------
 Copyright (c) 2014, Elodie Rafalimanana.
 All rights reserved.
