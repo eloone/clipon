@@ -33,7 +33,7 @@ I just wanted to copy paste so to not be tempted to redo google docs I designed 
 * No jQuery
 * Just socket.io and websockets
 
-These were good restrictions for focused development... :) !
+These are good restrictions for focused development... :) !
 
 ## Warning
 
