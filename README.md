@@ -26,6 +26,8 @@ Copy paste text across different computers through the Internet.
 
 ## Design
 
+You know, it's not google docs.
+
 * No database
 * No Express
 * No jQuery
