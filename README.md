@@ -26,14 +26,10 @@ Copy paste text across different computers through the Internet.
 
 ## Design
 
-I just wanted to copy paste so to not be tempted to redo google docs I designed it like this :
-
 * No database
 * No Express
 * No jQuery
 * Just socket.io and websockets
-
-These are good restrictions for focused development... :) !
 
 ## Warning
 
